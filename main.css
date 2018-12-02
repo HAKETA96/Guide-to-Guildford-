@@ -3,7 +3,14 @@ header {
   background: rgba(0,0,0,.6);
   background-size: cover;
   display: block;
-
+  width: 100%;
+  border-bottom: 1px solid;
+  transition: all 0.4s ease-in-out
+  -webkit-transition: all 0.4s ease-in-out
+  -moz-transition: all 0.4s ease-in-out ;
+  z-index: 9999;
+  top: 0;
+  position: fixed;
 }
 
 a {
@@ -31,3 +38,10 @@ body {
   margin: 0;
 
 }
+
+div {
+     height: 400px;
+     width: 800px;
+     line-height: 400px;
+     text-align: center;
+ }
