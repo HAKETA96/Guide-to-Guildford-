@@ -1,10 +1,9 @@
 header {
   text-align: center;
-  background: rgba(0,0,0,.6);
+  background: rgba(0,0,0,0.0);
   background-size: cover;
   display: block;
   width: 100%;
-  border-bottom: 1px solid;
   transition: all 0.4s ease-in-out
   -webkit-transition: all 0.4s ease-in-out
   -moz-transition: all 0.4s ease-in-out ;
@@ -21,11 +20,13 @@ h1 {
   font-size: 70px;
   color: white;
   margin: 0;
+  font-family: Arial Rounded MT Bold; 
 }
 
 ul {
   padding: 10px;
-  background: rgba(0,0,0,.6);
+  background: rgba(0,0,0,0.0);
+  font-size: 20px;
 }
 
 li {
@@ -41,7 +42,7 @@ body {
 
 div {
   height: 600px;
-  width: 1500px;
-  line-height: 950px;
+  width: 1550px;
+  line-height: 1000px;
   text-align: center;
  }
