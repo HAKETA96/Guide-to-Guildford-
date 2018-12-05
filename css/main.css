@@ -20,7 +20,7 @@ a {
   color: white;
   margin: 0;
   font-family: Arial Rounded MT Bold;
-
+  text-shadow: -1px -1px 0 #000;
 }
 
 ./h2 {
@@ -43,7 +43,9 @@ a {
 ul {
   padding: 10px;
   background: rgba(0,0,0,0.0);
+  font-family: Arial Rounded MT Bold;
   font-size: 20px;
+  color: white;
 }
 
 li {
@@ -51,17 +53,20 @@ li {
   padding: 0px 10px 0px 10px;
 }
 
+.nav li a{
+  color: white;
+}
+
 body {
   background-image: url("https://media.dayoutwiththekids.co.uk/media/15547/33456-stoke-park-guildford-01.jpg?anchor=center&mode=crop&quality=75&width=1680&height=940");
   background-repeat: no-repeat;
   background-attachment: scroll;
-  margin: 0;
   height: 100%;
 }
 
 div {
   height: 600px;
   width: 1550px;
-  line-height: 1000px;
+  line-height: 1200px;
   text-align: center;
  }
