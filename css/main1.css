@@ -1,0 +1,31 @@
+h1 {
+  color: Black;
+  text-align: center;
+  font-size: 80px;
+  font-weight: bold;
+}
+Body {
+  background-image: url("https://media.dayoutwiththekids.co.uk/media/15547/33456-stoke-park-guildford-01.jpg?anchor=center&mode=crop&quality=75&width=1680&height=940");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+ul {
+  padding: 20px;
+  background: rgba(0,0,0,0.0);
+  font-family: Arial Rounded MT Bold;
+  font-size: 20px;
+  color: white;
+}
+
+li {
+  display: inline;
+  padding: 0px 20px 0px 20px;
+}
+
+.nav li a{
+  color: white;
+  text-decoration: none;
+}
