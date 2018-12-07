@@ -81,3 +81,15 @@ div {
    flex-direction: column;
    top: 0;
  }
+ .btn-twitter {
+  background: #00acee;
+  border-color: #009ad5;
+}
+.btn-facebook {
+background: #4868ac;
+border-color: #314776;
+}
+.btn-instagram {
+background: #b62f26;
+border-color: #b62f26;
+}
