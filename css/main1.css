@@ -7,11 +7,11 @@ h1 {
 Body {
   background-image: url("https://media.dayoutwiththekids.co.uk/media/15547/33456-stoke-park-guildford-01.jpg?anchor=center&mode=crop&quality=75&width=1680&height=940");
   background-repeat: no-repeat;
-  background-attachment: scroll;
-  height: 100%;
-  background-size: cover;
+  background-size: 100% 100%;
   background-attachment: fixed;
+  background-position: center center;
 }
+
 ul {
   padding: 20px;
   background: rgba(0,0,0,0.0);
