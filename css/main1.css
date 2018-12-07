@@ -13,10 +13,10 @@ Body {
 }
 
 ul {
-  padding: 20px;
+  padding: 50px;
   background: rgba(0,0,0,0.0);
   font-family: Arial Rounded MT Bold;
-  font-size: 20px;
+  font-size: 50px;
   color: white;
 }
 
@@ -28,4 +28,9 @@ li {
 .nav li a{
   color: white;
   text-decoration: none;
+}
+
+.li:active,
+li:hover {
+  outline: 0;
 }
