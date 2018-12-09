@@ -8,14 +8,14 @@ header {
   -moz-transition: all 0.4s ease-in-out ;
   z-index: 9999;
   top: 0;
-  position: relative;
+  position: fixed;
 }
 
  h1 {
-  font-size: 70px;
+  font-size: 60px;
   color: white;
   margin: 0;
-  font-family: Arial Rounded MT Bold;
+  font-family: "Arial";
   text-shadow: -1px -1px 0 #000;
 }
 
@@ -23,7 +23,7 @@ header {
   font-size: 40px;
   color: white;
   margin: 0;
-  font-family: Arial Rounded MT Bold;
+  font-family: "Arial";
   margin-top: 150px;
   margin-bottom: 20px;
 }
@@ -32,14 +32,15 @@ header {
   font-size: 40px;
   color: white;
   margin: 0;
-  font-family: Arial Rounded MT Bold;
+  font-family: "Arial";
   margin-top: -100px;
 }
 
 ul {
   padding: 10px;
   background: rgba(0,0,0,0.0);
-  font-family: Arial Rounded MT Bold;
+  font-family: "Arial";
+  font-weight: bold;
   font-size: 30px;
 
 }
@@ -62,7 +63,7 @@ body {
   background-attachment: fixed;
   background-position: center center;
 }
-
+/*Explore Guildford center of page */
  .fullscreen {
    position: fixed;
    height: 100vh;
@@ -87,14 +88,11 @@ body {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  width: 1080px;
+  height: 820px;
   position: relative;
   margin: auto;
-}
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
 }
 
 /* Next & previous buttons */
@@ -167,7 +165,7 @@ body {
   animation-name: fade;
   animation-duration: 1.5s;
 }
-/*
+
 @-webkit-keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
@@ -176,7 +174,7 @@ body {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
-
+}
 
  /* Fading animation
  .btn-twitter {
