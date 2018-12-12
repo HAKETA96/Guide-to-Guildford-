@@ -11,46 +11,13 @@ header {
   position: fixed;
 }
 
-/* Style the search field */
-form.example input[type=text] {
-  padding: 10px;
-  font-size: 17px;
-  border: 1px solid grey;
-  float: left;
-  width: 80%;
-  background: #f1f1f1;
-}
-
-/* Style the search field */
-form.example input[type=text] {
-  padding: 10px;
-  font-size: 17px;
-  border: 1px solid grey;
-  float: left;
-  width: 80%;
-  background: #f1f1f1;
-}
-
-/* Style the submit button */
-form.example button {
-  float: left;
-  width: 20%;
-  padding: 10px;
-  background: #2196F3;
-  color: white;
-  font-size: 17px;
-  border: 1px solid grey;
-  border-left: none; /* Prevent double borders */
-  cursor: pointer;
-}
-
 form.example button:hover {
   background: #0b7dda;
 }
 
  h1 {
   font-size: 60px;
-  color: white;
+  color: #DCAE1D;
   margin: 0;
   font-family: "Arial";
   text-shadow: -1px -1px 0 #000;
@@ -88,17 +55,13 @@ li {
 }
 
 .nav li a {
-  color: white;
+  color: #00303F;
   text-decoration: none;
   text-shadow: -1px -1px 0 #000;
 }
 
 body {
-  background-image: url("https://media.dayoutwiththekids.co.uk/media/15547/33456-stoke-park-guildford-01.jpg?anchor=center&mode=crop&quality=75&width=1680&height=940");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-attachment: fixed;
-  background-position: center center;
+  background-color: #CAE4DB;
 }
 
  .button {

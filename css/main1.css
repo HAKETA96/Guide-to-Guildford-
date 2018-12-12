@@ -72,74 +72,105 @@ li {
    }
  }
 
-
 h1 {
-  color: red;
+  color: white;
   text-align: center;
   font-size: 50px;
   font-weight: bold;
-  font-family: "Arial"
+  font-family: "Arial";
+  text-shadow: -1px -1px 0 #000;
 }
-
-Body {
-  background-image: url("https://media.dayoutwiththekids.co.uk/media/15547/33456-stoke-park-guildford-01.jpg?anchor=center&mode=crop&quality=75&width=1680&height=940");
+body .image {
+  background: url("https://media.dayoutwiththekids.co.uk/media/15547/33456-stoke-park-guildford-01.jpg?anchor=center&mode=crop&quality=75&width=1680&height=940");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-attachment: fixed;
   background-position: center center;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
 }
 
-/*Eating out and reviews*/
-.flip-3D {
-    margin-top: 20px;
+.card {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 550px;
+  height: 366px;
+  transform-style: preserve-3d;
+  perspective: 600px;
+  transition: 0.5s;
 }
 
-@media (max-width: 635px) {
-    .back p {
-        font-size:13px;
-    }
+.card .front{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #000;
+  backface-visibility: hidden;
+  transform: rotateX(0deg);
+  transition: 0.5s;
 }
 
-@media (min-width: 636px) {
-    .back p {
-        font-size:17px;
-    }
+.card:hover .front{
+  transform: rotateX(-180deg);
 }
 
-
-.flip-3D > .front {
-    -webkit-transform: perspective(600px) rotateY(0deg);
-    transform: perspective(600px) rotateY(0deg);
-    height:300px;
-    backface-visibility: hidden;
-    transition: transform 1.5s linear 0s;
-    transition: -webkit-transform  1.5s linear 0s;
-  }
-
-.flip-3D > .back {
-    background-color: black;
-    position: absolute;
-    text-align: center;
-    padding: 0 15px;
-    color: white;
-    height:300px;
-    top: 0;
-    font-size: 20px;
-    font-family:'distant_galaxyregular';
-    -webkit-transform: perspective(600px) rotateY(180deg);
-    transform: perspective(600px) rotateY(180deg);
-    backface-visibility: hidden;
-    transition: transform 1.5s linear 0s;
-    transition: -webkit-transform 1.5s linear 0s;
-  }
-
-
-.flip-3D:hover >.front {
-    -webkit-transform: perspective(600px) rotateY(-180deg);
-    transform: perspective(600px) rotateY(-180deg);
+.card .back{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  backface-visibility: hidden;
+  transform: rotateX(180deg);
+  transition: 0.5s;
 }
 
-.flip-3D:hover >.back {
-    -webkit-transform: perspective(600px) rotateY(0deg);
-    transform: perspective(600px) rotateY(0deg);
+.card .back:before{
+  position: fixed;
+  top: 0;
+  left: -50%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.1);
+}
+
+.card:hover  .back{
+  transform: rotateX(0deg);
+}
+
+.card .back .details{
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.card .back .details h2{
+  margin: 0;
+  padding: 0;
+  font-size: 50px;
+}
+
+.card .back .details h2 span{
+  color; white;
+  font-size: 16px;
+}
+
+.about {
+  color: white;
+  font-family: "Arial";
+}
+
+h2 {
+  color: white;
+  font-family: "Arial";
+  font-size: 150px;
 }
