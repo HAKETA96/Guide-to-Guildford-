@@ -1,3 +1,4 @@
+
 header {
   text-align: center;
   background: rgba(0,0,0,0.0);
@@ -11,10 +12,51 @@ header {
   position: fixed;
 }
 
+.nav1 {
+  border-bottom: 1px transparent #EAEAEB;
+  text-align: center;
+  height: 70px;
+  line-height: 70px;
+}
+
+ label{
+   margin: 0 40px 0 0;
+   font-size: 26px;
+   line-height: 70px;
+   display: none;
+   width: 26px;
+   float: right;
+ }
+
+ #toggle {
+   display: none;
+   color: white;
+ }
+ /*change the header into a hamburger menu when screen is made smaller */
+ @media only screen and (max-width:900px) {
+   label {
+     display: block;
+     cursor: pointer;
+   }
+   .nav {
+     text-align: center;
+     width: 100%;
+     display: none;
+   }
+   .nav a {
+     display: block;
+     border-bottom: 1px solid #EAEAEB;
+     margin: 0;
+   }
+   #toggle:checked + .nav{
+     display:block;
+   }
+ }
+
 .search-box{
   position: absolute;
-  top: 50%;
-  left: 90%;
+  top: 70%;
+  left: 9%;
   transform: translate(-50%, -50%);
   background: #2f3640;
   height: 40px;
@@ -31,7 +73,7 @@ header {
 /*search button background changes colour when hovered over and moves to the right*/
 .search-box:hover > .search-btn{
   background: grey;
-  transform: translate(1%, -97%);
+  transform: translate(1%, 0%);
 }
 
 .search-btn{
