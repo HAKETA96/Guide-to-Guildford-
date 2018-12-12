@@ -80,15 +80,14 @@ h1 {
   font-family: "Arial";
   text-shadow: -1px -1px 0 #000;
 }
-body .image {
-  background: url("https://media.dayoutwiththekids.co.uk/media/15547/33456-stoke-park-guildford-01.jpg?anchor=center&mode=crop&quality=75&width=1680&height=940");
+
+body {
+  background-image: url("https://media.dayoutwiththekids.co.uk/media/15547/33456-stoke-park-guildford-01.jpg?anchor=center&mode=crop&quality=75&width=1680&height=940");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-attachment: fixed;
   background-position: center center;
   z-index: -1;
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
 }
 
 .card {
