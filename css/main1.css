@@ -1,10 +1,86 @@
-h1 {
-  color: Black;
+
+header {
   text-align: center;
-  font-size: 80px;
+  background: rgba(0,0,0,0.0);
+  background-size: cover;
+  width: 100%;
+  transition: all 0.4s ease-in-out
+  -webkit-transition: all 0.4s ease-in-out
+  -moz-transition: all 0.4s ease-in-out ;
+  z-index: 9999;
+  top: 0;
+  position: fixed;
+}
+
+ul {
+  padding: 10px;
+  background: rgba(0,0,0,0.0);
+  font-family: "Arial";
+  font-weight: bold;
+  font-size: 30px;
+}
+
+li {
+  display: inline;
+  padding: 0px 10px 0px 10px;
+}
+
+.nav li a {
+  color: white;
+  text-decoration: none;
+  text-shadow: -1px -1px 0 #000;
+}
+/*Hamburger menu */
+.nav1 {
+  border-bottom: 1px transparent #EAEAEB;
+  text-align: center;
+  height: 70px;
+  line-height: 70px;
+}
+
+ label{
+   margin: 0 40px 0 0;
+   font-size: 26px;
+   line-height: 70px;
+   display: none;
+   width: 26px;
+   float: right;
+ }
+
+ #toggle {
+   display: none;
+   color: white;
+ }
+ /*change the header into a hamburger menu when screen is made smaller */
+ @media only screen and (max-width:900px) {
+   label {
+     display: block;
+     cursor: pointer;
+   }
+   .nav {
+     text-align: center;
+     width: 100%;
+     display: none;
+   }
+   .nav a {
+     display: block;
+     border-bottom: 1px solid #EAEAEB;
+     margin: 0;
+   }
+   #toggle:checked + .nav{
+     display:block;
+   }
+ }
+
+
+h1 {
+  color: red;
+  text-align: center;
+  font-size: 50px;
   font-weight: bold;
   font-family: "Arial"
 }
+
 Body {
   background-image: url("https://media.dayoutwiththekids.co.uk/media/15547/33456-stoke-park-guildford-01.jpg?anchor=center&mode=crop&quality=75&width=1680&height=940");
   background-repeat: no-repeat;
@@ -13,33 +89,9 @@ Body {
   background-position: center center;
 }
 
-ul {
-  padding: 50px;
-  background: rgba(0,0,0,0.0);
-  font-family: "Arial";
-  font-size: 50px;
-  color: white;
-}
-
-li {
-  display: inline;
-  padding: 0px 20px 0px 20px;
-}
-
-.nav li a{
-  color: white;
-  text-decoration: none;
-}
-
-.li:active,
-li:hover {
-  outline: 0;
-}
-
 /*Eating out and reviews*/
 .flip-3D {
     margin-top: 20px;
-
 }
 
 @media (max-width: 635px) {
