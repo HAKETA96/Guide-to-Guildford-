@@ -61,7 +61,7 @@ li {
   background-color: #000;
   color: #fff;
   padding: 16px;
-  border-radius: 8px;
+  border-radius: 10px;
   margin: 0;
   font-family: "Arial";
   font-size: 20px;
@@ -76,7 +76,7 @@ li {
   mix-blend-mode: normal;
   background: normal;
   color: transparent;
-  
+
 }
 
 /* Slideshow container */

@@ -18,7 +18,71 @@ header {
   height: 70px;
   line-height: 70px;
 }
+/*Button Explore Guildford*/
+button {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
+button {
+  background: none;
+  color: #fff;
+  width: 280px;
+  height: 80px;
+  border: 1px solid #2f3640;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 4px;
+  transition: .6s;
+  overflow: hidden;
+}
+
+button: focus{
+  outline: none;
+}
+button:before{
+  content: '';
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255, .5);
+  width:60px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: .5s;
+  filter: blur(30px);
+  transform:translateX(-130px) skewX(-15deg);
+}
+
+button:after{
+  content: '';
+  display: block;
+  position: absolute;
+  background: rgba(38, 88, 110, .2);
+  width:30px;
+  height: 100%;
+  left: 30px;
+  top: 0;
+  opacity: 0;
+  filter: blur(30px);
+  transform:translate(-100px) scaleX(-15deg);
+}
+
+button:hover {
+  background: #2f3640;
+  cursor: pointer;
+}
+
+button:hover:before {
+  transform: translateX(300px) skewX(-15deg);
+  opacity: .6;
+  transition: .7s;
+}
+
+/*Search box positioning and size */
  label{
    margin: 0 40px 0 0;
    font-size: 26px;
@@ -32,6 +96,7 @@ header {
    display: none;
    color: white;
  }
+
  /*change the header into a hamburger menu when screen is made smaller */
  @media only screen and (max-width:900px) {
    label {
@@ -103,14 +168,6 @@ header {
   width: 0px;
 }
 
-
-/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
- h1 {
-  font-size: 60px;
-  color: white;
-  margin: 0;
-  font-family: "Arial";
-  text-shadow: -1px -1px 0 #000;
 }
 
 ./h2 {
