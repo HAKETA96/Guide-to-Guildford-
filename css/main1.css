@@ -96,9 +96,10 @@ h1 {
 }
 
 .card {
-  position: absolute;
-  top: 70%;
-  left: 50%;
+  position: relative;
+  float: right;
+  margin-bottom: 10px;
+  margin-right: 10px;
   transform: translate(-50%,-50%);
   width: 550px;
   height: 366px;
@@ -106,6 +107,8 @@ h1 {
   perspective: 600px;
   transition: 0.5s;
   z-index: 1000;
+  border-color: white;
+  border-image-width: 5px;
 }
 
 .card .front{
@@ -124,7 +127,7 @@ h1 {
 }
 
 .card .back{
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
