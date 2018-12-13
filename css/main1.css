@@ -13,11 +13,11 @@ header {
 }
 
 ul {
-  padding: 10px;
   background: rgba(0,0,0,0.0);
   font-family: "Arial";
   font-weight: bold;
   font-size: 30px;
+  top: 0;
 }
 
 li {
@@ -88,11 +88,20 @@ label{
 
 h1 {
   color: white;
-  text-align: center;
-  font-size: 50px;
+  font-size: 35px;
   font-weight: bold;
   font-family: "Arial";
   text-shadow: -1px -1px 0 #000;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+  text-align: center;
+  top: 15%;
+}
+
+.cards_full_page{
+  position: absolute;
+  top: 60%;
 }
 
 .card {
@@ -107,8 +116,6 @@ h1 {
   perspective: 600px;
   transition: 0.5s;
   z-index: 1000;
-  border-color: white;
-  border-image-width: 5px;
 }
 
 .card .front{
