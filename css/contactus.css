@@ -1,55 +1,147 @@
-.middle{
+
+
+.background-image {
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-image: url("https://media.dayoutwiththekids.co.uk/media/15547/33456-stoke-park-guildford-01.jpg?anchor=center&mode=crop&quality=75&width=1680&height=940");
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  -webkit-filter:blur(7px) ;
+}
+
+header {
+    text-align: center;
+    background: rgba(0,0,0,0.0);
+    background-size: cover;
+    width: 100%;
+    transition: all 0.4s ease-in-out -webkit-transition: all 0.4s ease-in-out -moz-transition: all 0.4s ease-in-out;
+    top: 0;
+    position: relative;
+    z-index: 1000;
+  }
+
+ul {
+  background: rgba(0,0,0,0.0);
+  font-family: "Arial";
+  font-weight: bold;
+  font-size: 30px;
+  top: 0;
+  z-index: 1000;
+}
+
+li {
+  display: inline;
+  padding: 0px 10px 0px 10px;
+  z-index: 1000;
+}
+
+.nav li a {
+  color: white;
+  text-decoration: none;
+  text-shadow: -1px -1px 0 #000;
+  z-index: 1000;
+}
+
+
+/*Hamburger menu */
+.nav1 {
+  border-bottom: 1px transparent #EAEAEB;
+  text-align: center;
+  height: 70px;
+  line-height: 70px;
+  z-index: 1000;
+}
+
+label{
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  display: none;
+  width: 26px;
+  float: right;
+}
+
+#toggle {
+  display: none;
+  color: white;
+}
+
+/*Social media buttons*/
+.social ul{
+  display: flex;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.social ul li {
+  list-style: none;
+}
+
+.social ul li a{
+  width: 80px;
+  height: 80px;
+  background: #fff;
   text-align: center;
-}
-
-.btn{
-  display: inline-block;
-  width: 90px;
-  height: 90px;
-  background: #f1f1f1;
-  margin: 10px;
-  border-radius: 30;
-  box-shadow: 0 5px  15px -5px #00000078;
-  color: #3498db;
-  overflow: hidden;
+  line-height: 80px;
+  font-size: 35px;
+  margin: 0 10px;
+  display: block;
+  border-radius: 50%;
   position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  z-index: 1;
 }
 
-.btn:hover i{
-  transform: scale(1.3);
-  color: #f1f1f1
+.social ul li a .fa{
+  position: relative;
+  color: #262626;
+  transition: .5s;
 }
 
-.btn::before{
+.social ul li a:hover .fa{
+  color: #fff;
+transform: rotateY(360deg);
+}
+
+.social ul li a:before{
   content: "";
   position: absolute;
-  width: 120%;
-  height: 120%;
-  background: #3498db;
-  transform: rotate(45deg);
-  left: -110%;
-  top: 90%;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: .5s;
+  z-index: 2;
 }
 
-.btn:hover::before{
-  animation: aaa 0.7s 1;
-  top: -10%;
-  left: -10%;
+.social ul li a:hover:before{
+  top: 0;
 }
 
-@keyframes aaa{
-  0%{
-    left: -110%;
-    top: 90%;
-  }50%{
-    left: 10%;
-    top: -30%;
-  }100%{
-    top: -10%;
-    left: -10%;
-  }
+.social ul li:nth-child(1) a:before{
+  background: #3b5999;
 }
+
+.social ul li:nth-child(2) a:before{
+  background: #55acee;
+}
+
+.social ul li:nth-child(3) a:before{
+  background: #dd4b39;
+}
+
+.social ul li:nth-child(4) a:before{
+  background: #e4405f;
+}
+
+.social ul li:nth-child(5) a:before{
+  background:  #ff0000 ;
+}
+
+/*End of social media button styles*/
