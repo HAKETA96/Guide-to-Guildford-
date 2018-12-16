@@ -97,15 +97,16 @@ label{
   z-index: 1;
 }
 
-.social ul li a .fa{
+.social ul li a .fab{
   position: relative;
   color: #262626;
   transition: .5s;
+  z-index: 3;
 }
 
-.social ul li a:hover .fa{
+.social ul li a:hover .fab{
   color: #fff;
-transform: rotateY(360deg);
+-webkit-transform: rotateY(360deg);
 }
 
 .social ul li a:before{
