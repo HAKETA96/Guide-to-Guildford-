@@ -48,7 +48,6 @@ li {
 /*Text above photos slideshow*/
 .section-header{
   text-align: center;
-  color: white;
 }
 
 .section-header h2{
@@ -57,16 +56,17 @@ li {
   font-family: "Arial";
   position: relative;
   transform: translate(0%,220%);
+  color: black;
   z-index: 1000;
 }
 
 .line{
   height: 5px;
   width: 400px;
-  background: #95afb6;
+  background: black;
   display: inline-block;
   position: absolute;
-  transform: translate(-50%,950%);
+  transform: translate(-50%,1200%);
   z-index: 1000;
 }
 
@@ -76,6 +76,7 @@ li {
   font-family: "Arial";
   position: relative;
   transform: translate(0%,80%);
+  color: white;
   z-index: 1000;
 }
 

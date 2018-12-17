@@ -34,7 +34,6 @@ header{
 /*Text above video*/
 .section-header{
   text-align: center;
-  color: white;
 }
 
 .section-header h2{
@@ -43,16 +42,17 @@ header{
   font-family: "Arial";
   position: relative;
   transform: translate(0%,220%);
+  color: black;
   z-index: 1000;
 }
 
 .line{
   height: 5px;
   width: 600px;
-  background: #95afb6;
+  background: black;
   display: inline-block;
   position: relative;
-  transform: translate(0%,750%);
+  transform: translate(0%,800%);
 }
 
 .section-header p{
@@ -62,6 +62,7 @@ header{
   position: relative;
   transform: translate(0%,60%);
   z-index: 1000;
+  color: white;
 }
 
 /*drone video of guildford*/
