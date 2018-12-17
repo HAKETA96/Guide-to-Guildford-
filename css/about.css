@@ -8,19 +8,11 @@ header {
   -moz-transition: all 0.4s ease-in-out ;
   z-index: 9999;
   top: 0;
-  position: fixed;
+  position: absolute;
 }
 
 form.example button:hover {
   background: #0b7dda;
-}
-
-./h3 {
-  font-size: 40px;
-  color: white;
-  margin: 0;
-  font-family: "Arial";
-  margin-top: -100px;
 }
 
 ul {
@@ -53,37 +45,47 @@ li {
   -webkit-filter:blur(7px) ;
 }
 
-.overlay h1{
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -60%);
-  background-color: #000;
-  color: #fff;
-  padding: 16px;
-  border-radius: 10px;
-  margin: 0;
-  font-family: "Arial";
-  font-size: 20px;
-  mix-blend-mode: multiply;
-  box-shadow: 0 0 16px #000, 0 0 32px #000;
-  opacity: 0.9;
-  z-index: 1000;
+/*Text above photos slideshow*/
+.section-header{
   text-align: center;
+  color: white;
 }
 
-.overlay h1: last-child{
-  mix-blend-mode: normal;
-  background: normal;
-  color: transparent;
-
+.section-header h2{
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: "Arial";
+  position: relative;
+  transform: translate(0%,220%);
+  z-index: 1000;
 }
+
+.line{
+  height: 5px;
+  width: 400px;
+  background: #95afb6;
+  display: inline-block;
+  position: absolute;
+  transform: translate(-50%,950%);
+  z-index: 1000;
+}
+
+.section-header p{
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Arial";
+  position: relative;
+  transform: translate(0%,80%);
+  z-index: 1000;
+}
+
 
 /* Slideshow container */
 .slideshow-container {
   width: 800px;
   height: 566px;
-  position: relative;
+  position: absolute;
+  transform: translate(40%,-30%);
   margin: auto;
   padding-top: 400px;
   z-index: 1000;
@@ -114,7 +116,6 @@ li {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
-
 }
 
 /* Caption text */
@@ -183,18 +184,3 @@ li {
   to {opacity: 1}
   z-index: 1000;
 }
-
- /* Fading animation
- .btn-twitter {
-  background: #00acee;
-  border-color: #009ad5;
-}
-.btn-facebook {
-background: #4868ac;
-border-color: #314776;
-}
-.btn-instagram {
-background: #b62f26;
-border-color: #b62f26;
-}
-*/
