@@ -64,59 +64,25 @@ header{
   z-index: 1000;
 }
 
-
 /*drone video of guildford*/
-v.video {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.video iframe {
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-}
-
-.video .overlay {
-    position: absolute;
-    z-index: 2;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: url(image url) repeat;
-}
-
-/* Makes a fixed background wrapper
-which the user cannot interact with */
-
-.iframe-wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
+.videoContainer {
+  position: absolute;
+  transform: translate(0%, 20%);
   width: 100%;
   height: 100%;
-  z-index: -1;
-  pointer-events: none;
-  overflow: hidden;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Make the iframe keep an aspect ratio, and
-position it in the middle of its parent wrapper*/
-
-.iframe-wrapper iframe {
-  width: 100vw;
-  height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
-  min-height: 100vh;
-  min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+iframe {
+  width: 100%;
+  height: 100%;
 }
 
 /*Clear header*/
