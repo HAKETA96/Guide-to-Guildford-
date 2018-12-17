@@ -1,6 +1,3 @@
-*{
-  box-sizing: border-box;
-}
 
 body{
   margin: 0;
@@ -34,56 +31,7 @@ header{
   -webkit-filter:blur(7px) ;
 }
 
-/*drone video of guildford*/
-.vid-bg{
-  position: absolute;
-    top: 70%;
-    left: 50%;
-    z-index: -100;
-    min-width: 100%;
-    min-height: 100%;
-    width: inherit;
-    height: inherit;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-.nav-area{
-    text-align: center;
-    background: rgba(0,0,0,0.0);
-    background-size: cover;
-    width: 100%;
-    transition: all 0.4s ease-in-out
-    -webkit-transition: all 0.4s ease-in-out
-    -moz-transition: all 0.4s ease-in-out ;
-    z-index: 9999;
-    top: 0;
-    position: fixed;
-  }
-
-/*clear header*/
-ul {
-  background: rgba(0,0,0,0.0);
-  font-family: "Arial";
-  font-weight: bold;
-  font-size: 30px;
-}
-
-li {
-  display: inline;
-  padding: 0px 10px 0px 10px;
-}
-
-.nav li a {
-  color: white;
-  text-decoration: none;
-  text-shadow: -1px -1px 0 #000;
-  z-index: 1000;
-}
-/*End of clear header*/
-
-/*Text underneath video*/
+/*Text above video*/
 .section-header{
   text-align: center;
   color: white;
@@ -100,7 +48,7 @@ li {
 
 .line{
   height: 5px;
-  width: 500px;
+  width: 600px;
   background: #95afb6;
   display: inline-block;
   position: relative;
@@ -113,5 +61,93 @@ li {
   font-family: "Arial";
   position: relative;
   transform: translate(0%,60%);
+  z-index: 1000;
+}
+
+
+/*drone video of guildford*/
+v.video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video iframe {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.video .overlay {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(image url) repeat;
+}
+
+/* Makes a fixed background wrapper
+which the user cannot interact with */
+
+.iframe-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* Make the iframe keep an aspect ratio, and
+position it in the middle of its parent wrapper*/
+
+.iframe-wrapper iframe {
+  width: 100vw;
+  height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+  min-height: 100vh;
+  min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*Clear header*/
+.nav-area{
+    text-align: center;
+    background: rgba(0,0,0,0.0);
+    background-size: cover;
+    width: 100%;
+    transition: all 0.4s ease-in-out
+    -webkit-transition: all 0.4s ease-in-out
+    -moz-transition: all 0.4s ease-in-out ;
+    z-index: 9999;
+    top: 0;
+    position: fixed;
+  }
+
+ul {
+  background: rgba(0,0,0,0.0);
+  font-family: "Arial";
+  font-weight: bold;
+  font-size: 30px;
+}
+
+li {
+  display: inline;
+  padding: 0px 10px 0px 10px;
+}
+
+.nav li a {
+  color: white;
+  text-decoration: none;
+  text-shadow: -1px -1px 0 #000;
   z-index: 1000;
 }
